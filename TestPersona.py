@@ -1,5 +1,5 @@
 import unittest
-from copipersona import Persona
+from persona import Persona
 from unittest.mock import patch
 
 class TestPersona(unittest.TestCase):

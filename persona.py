@@ -1,19 +1,8 @@
 class Persona:
-    def __init__(self, documento=1, apellido='Fernandez', nombre='Anabel'):
-        self.documento=documento
-        self.apellido=apellido
-        self.nombre=nombre
-   
+    def __init__(self, documento, apellido, nombre):
+        self.documento = documento
+        self.apellido = apellido
+        self.nombre = nombre
+    def __str__(self):
 
-
-    def input(self):
-        self.documento = int(input('Ingrese documento: '))
-        self.apellido = input('Ingrese apellido: ')
-        self.nombre = input('Ingrese nombre: ')
-         
-    def __repr__(self):
-        return f'Persona: {self.documento} {self.apellido},{self.nombre}'
-      
-
-persona=Persona()
-print(persona)
+#print(persona)
