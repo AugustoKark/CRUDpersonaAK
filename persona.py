@@ -3,10 +3,8 @@ class Persona:
         self.documento=documento
         self.apellido=apellido
         self.nombre=nombre
-    #return {'documento':3,'apellido':'Trump', 'nombre':'Donald'}) with imputs
-    def __eq__(self, other):
-        return self.__dict__ == other.__dict__
-        
+   
+
 
     def input(self):
         self.documento = int(input('Ingrese documento: '))
