@@ -7,11 +7,7 @@ class TestPersona(unittest.TestCase):
         persona = Persona()
         self.assertEqual(persona.__dict__, {'documento':1,'apellido':'Fernandez', 'nombre':'Anabel'})
 
-    @patch('builtins.input', side_effects=[3, 'Trump', 'Donald'])
-    def test_input(self):
-        persona = Persona()
-        persona.input()
-        self.assertEqual(persona.__dict__, {'documento':3,'apellido':'Trump', 'nombre':'Donald'})
+   
 
 if __name__ == '__main__':
     unittest.main()    
